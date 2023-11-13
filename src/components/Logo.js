@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoSvg from "../assets/logo.svg";
 
 const Logo = () => {
   return (
@@ -11,7 +10,6 @@ const Logo = () => {
 text-lg text-cyan flex items-center
      "
     >
-      <img src={logoSvg} alt="CryptoBucks" />
       <span>CramerTrade</span>
     </Link>
   );
