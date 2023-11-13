@@ -1,9 +1,5 @@
 import { createContext, useLayoutEffect, useState } from "react";
-
-// create context object
 export const TrendingContext = createContext({});
-
-// create the provider component
 export const TrendingProvider = ({ children }) => {
   const [trendData, setTrendData] = useState();
 
@@ -15,7 +11,6 @@ export const TrendingProvider = ({ children }) => {
         .then((res) => res.json())
         .then((json) => json);
 
-      // console.log(data);
       setTrendData(data.coins);
     } catch (error) {
       console.log(error);
